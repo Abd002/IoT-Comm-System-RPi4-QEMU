@@ -41,10 +41,6 @@ setenv serverip 192.168.0.1 # Host machine (TFTP server)
 setenv gatewayip 192.168.0.1
 setenv netmask 255.255.255.0
 saveenv
-
-
-
-
 ```
 - built ur RFS
 - add client_qemu to RFS in both
