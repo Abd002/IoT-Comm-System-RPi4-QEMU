@@ -1,10 +1,13 @@
 #include <iostream>
+#include <iterator>
 #include "tcp.hpp"  
 
-int main() {
+int main(int argc, char**argv) {
     TCP tcpClient;  
-
-    const char* serverIp = "192.168.0.1";
+    if(argc==1)
+        return 0;
+    const char* serverIp = argv[1];
+    std::cout<<"Connecting to : "<<serverIp<<std::endl;
     int port = 8080; 
 
 
